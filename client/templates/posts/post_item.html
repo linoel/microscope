@@ -5,6 +5,15 @@
 				<a href="{{url}}">{{title}}</a>
 				<span>{{domain}}</span>
 			</h3>
+			<p>
+				作者： {{author}}
+				 <a href="{{pathFor 'postPage'}}">{{commentsCount}} 评论
+				 </a>
+				{{#if ownPost}}
+				<a href="{{pathFor 'postEdit'}}">编辑</a>
+				{{/if}}
+			</p>
 		</div>
+		<a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">讨论</a>
 	</div>
 </template>
