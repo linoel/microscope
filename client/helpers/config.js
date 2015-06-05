@@ -3,3 +3,4 @@ Accounts.ui.config({
 });
 
 accountsUIBootstrap3.setLanguage('zh');
+

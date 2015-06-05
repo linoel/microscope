@@ -1,19 +1,21 @@
-<template name="postItem">
-	<div class="post">
-    		<a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆  {{pluralize votes "票"}}</a>
+<template name="postContent">
+<div class="post">
+
 
 		<div class="post-content">
 			<h3>
-				<a href="{{pathFor 'postPage'}}">{{title}}</a>
+				<a>{{title}}</a>
 
 				<!-- <span>{{domain}}</span> -->
-			</h3>
+			</h3>  <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆  {{pluralize votes "票"}}</a>
+
+			<p style="margin: 10px 10px 10px 10px;">
+				{{url}}
+			</p>
 
 			<p>
 
 				作者： {{author}}
-
-
 				 <a href="{{pathFor 'postPage'}}">{{commentsCount}} 评论
 				 </a>
 
@@ -23,4 +25,5 @@
 		</div>
 		<!-- <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">详细</a> -->
 	</div>
+
 </template>
